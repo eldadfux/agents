@@ -1,0 +1,39 @@
+{
+    "name": "utopia-php/agents",
+    "description": "A simple PHP AI agents library",
+    "type": "library",
+    "keywords": ["php", "ai", "agents", "automation", "machine-learning"],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Utopia PHP",
+            "email": "team@appwrite.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Utopia\\Agents\\": "src/Agents"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Utopia\\Tests\\Agents\\": "tests/Agents"
+        }
+    },
+    "scripts": {
+        "check": "./vendor/bin/phpstan analyse --level max src tests",
+        "lint": "./vendor/bin/pint --test",
+        "format": "./vendor/bin/pint"
+    },
+    "require": {
+        "php": ">=8.3",
+        "utopia-php/fetch": "feat-eldad-v1-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "vimeo/psalm": "4.0.1",
+        "laravel/pint": "1.2.*",
+        "phpstan/phpstan": "1.9.x-dev"
+    }
+} 
